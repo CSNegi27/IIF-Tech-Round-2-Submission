@@ -1,0 +1,36 @@
+.about {
+  padding: 20px;
+  margin: 20px auto;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  height: auto;
+}
+
+.about h2 {
+  color: #bb86fc;
+}
+
+.about h3 {
+  margin-top: 20px;
+  color: #ce5555;
+}
+
+.about p,
+.about ul {
+  margin: 15px 0;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.about ul {
+  list-style-type: none;
+  padding-left: 0;
+}

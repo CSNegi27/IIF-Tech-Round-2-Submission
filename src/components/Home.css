@@ -1,0 +1,97 @@
+.home {
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero {
+    background: linear-gradient(90deg, #6200ea, #68607a);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto 20px; 
+    max-width: 150px; 
+    height: auto; 
+  }
+  
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #96b9a5;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background: #abd248;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .cta-button:hover {
+    background: #3700b3;
+    transform: scale(1.05);
+  }
+  
+  .features {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .features h2 {
+    margin-bottom: 30px;
+    color: #d34fc8;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonials {
+    padding: 40px 20px;
+    background: #1e1e1e;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    margin-bottom: 30px;
+    color: #d34fc8;
+  }
+  
+  .testimonial {
+    margin: 15px 0;
+    font-style: italic;
+  }
+  
+  .testimonial cite {
+    display: block;
+    margin-top: 10px;
+    color: #25deb3;
+  }  
