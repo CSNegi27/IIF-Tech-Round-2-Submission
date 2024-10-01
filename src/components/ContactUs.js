@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './ContactUs.css'; 
 
 const Contact = () => {
@@ -70,15 +68,9 @@ const Contact = () => {
       <div className="social-media">
         <h3>Follow Us</h3>
         <p>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebook} /> Facebook
-          </a> | 
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} /> Twitter
-          </a> | 
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </p>
       </div>
     </section>
