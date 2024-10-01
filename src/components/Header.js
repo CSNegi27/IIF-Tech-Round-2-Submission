@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -13,13 +14,13 @@ const Header = () => {
     <header className="header">
       <h1>XYZ Company</h1>
       <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-        <Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
-        <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
-        <Link to="/gallery" onClick={() => setIsOpen(false)}>Event Gallery</Link>
-        <Link to="/register" onClick={() => setIsOpen(false)}>Event Registration</Link>
+        <Link to="/" onClick={() => setIsOpen(false)} className={location.pathname === '/' ? 'active' : ''}>Home</Link>
+        <Link to="/about" onClick={() => setIsOpen(false)} className={location.pathname === '/about' ? 'active' : ''}>About Us</Link>
+        <Link to="/contact" onClick={() => setIsOpen(false)} className={location.pathname === '/contact' ? 'active' : ''}>Contact Us</Link>
+        <Link to="/gallery" onClick={() => setIsOpen(false)} className={location.pathname === '/gallery' ? 'active' : ''}>Event Gallery</Link>
+        <Link to="/register" onClick={() => setIsOpen(false)} className={location.pathname === '/register' ? 'active' : ''}>Event Registration</Link>
       </nav>
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className="hamburger" onClick={toggleMenu} aria-expanded={isOpen}>
         <span></span>
         <span></span>
         <span></span>
