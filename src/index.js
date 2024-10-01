@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles/App.css';
 import reportWebVitals from './reportWebVitals';
-import logo from './assets/images/xyz-company-logo.png'; // Adjust the path as needed
+import logo from './assets/xyz-company-logo.png'; // Adjust the path as needed
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
