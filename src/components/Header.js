@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
+import logo from './assets/xyz-company-logo.jpg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,7 @@ const Header = () => {
 
   return (
     <header className="header">
+      <img src={logo} alt="XYZ Company Logo" className="logo" />
       <h1>XYZ Company</h1>
       <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
         <Link to="/" onClick={() => setIsOpen(false)} className={location.pathname === '/' ? 'active' : ''}>Home</Link>
