@@ -21,28 +21,27 @@ const EventRegistration = () => {
   };
 
   useEffect(() => {
-  const div = document.createElement('div');
-  div.id = 'aichatbot';
-  document.body.appendChild(div);
+    const div = document.createElement('div');
+    div.id = 'aichatbot';
+    document.body.appendChild(div);
 
-  const existingScript = document.getElementById('chatbot-script');
-  if (!existingScript) {
+    window.chatbotConfig = ['57DD6C33-E58D-4AC8-B663-86754C01FB55', 'onboarding_bot', {
+      apiHost: 'https://api-cf-ap-8.sendbird.com',
+    }];
+
     const script = document.createElement('script');
-    script.id = 'chatbot-script';
     script.defer = true;
     script.type = 'module';
     script.src = 'https://aichatbot.sendbird.com/index.js';
-    document.body.appendChild(script);
-  }
 
-  window.chatbotConfig = ['57DD6C33-E58D-4AC8-B663-86754C01FB55', 'onboarding_bot', {
-    apiHost: 'https://api-cf-ap-8.sendbird.com',
-  }];
+    const firstScript = document.getElementsByTagName('script')[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
 
-  return () => {
-    document.body.removeChild(div);
-  };
-}, []);
+    return () => {
+      document.body.removeChild(div);
+      firstScript.parentNode.removeChild(script);
+    };
+  }, []);
 
   return (
     <section className="registration">
