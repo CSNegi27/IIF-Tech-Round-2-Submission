@@ -1,84 +1,84 @@
 .contact {
-    padding: 20px;
-    margin: 20px;
-    background: #1e1e1e;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .contact h2 {
-    text-align: center;
-    color: #bb86fc;
-  }
-  
-  .contact p {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #e0e0e0;
-  }
-  
-  .contact-info {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #e0e0e0;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  label {
-    display: flex;
-    flex-direction: column;
-    color: #e0e0e0;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    background-color: #222;
-    color: #e0e0e0;
-    transition: border-color 0.3s;
-  }
-  
-  input:focus, textarea:focus {
-    border-color: #bb86fc;
-    outline: none;
-  }
-  
-  textarea {
-    height: 100px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background: linear-gradient(90deg, #6200ea, #3700b3);
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  button:hover {
-    background: linear-gradient(90deg, #3700b3, #6200ea);
-    transform: scale(1.05);
-  }
-  
-  .social-media {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .social-media a {
-    color: #bb86fc;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  .social-media a:hover {
-    text-decoration: underline;
-  }  
+  padding: 20px;
+  margin: 20px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact h2 {
+  text-align: center;
+  color: #bb86fc;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: #e0e0e0;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #e0e0e0;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #bb86fc;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #6200ea, #3700b3);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #3700b3, #6200ea);
+  transform: scale(1.05);
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-media a {
+  color: #bb86fc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
